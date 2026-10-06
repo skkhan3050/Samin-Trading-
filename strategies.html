@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Strategies & Frameworks | TRADELAB</title>
+    <meta name="description" content="Explore structured crypto trading strategies, trend models, breakout frameworks, and market structure methodologies designed for disciplined crypto traders." />
+    <meta name="keywords" content="crypto trading strategies, trend trading, breakout strategy, market structure, risk management, trade execution" />
+    <meta name="theme-color" content="#08111F" />
+    
+    <!-- OpenGraph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TRADELAB | Structured Crypto Trading Strategies" />
+    <meta property="og:description" content="Trade with a plan. Not with emotion. Explore practical strategy frameworks built around market analysis and risk management." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body class="bg-primary text-main font-sans antialiased overflow-x-hidden selection-neon">
+    <!-- Subtle Background Trading Grid & Particle Canvas -->
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-top" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-mid" aria-hidden="true"></div>
+    <canvas id="trading-matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <!-- App Container -->
+    <div id="app">
+      <!-- Header / Navigation -->
+      <header id="site-header" class="site-header"></header>
+
+      <!-- Breadcrumb Bar -->
+      <div class="container" style="padding-top: 20px; padding-bottom: 0;">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          <a href="/" style="color: var(--text-secondary); transition: color 0.2s;" onmouseover="this.style.color='#B7FF00'" onmouseout="this.style.color='var(--text-secondary)'">Home</a>
+          <span>/</span>
+          <span style="color: var(--neon-green); font-weight: 600;">Trading Strategies</span>
+        </nav>
+      </div>
+
+      <!-- Main Content Sections -->
+      <main id="main-content">
+        <!-- 1. Hero Section -->
+        <section id="strategy-hero" class="hero-section" style="padding-top: 36px;"></section>
+
+        <!-- 2. Market Ticker -->
+        <section id="strategy-ticker" class="trust-section"></section>
+
+        <!-- 3. Introduction Section -->
+        <section id="strategy-intro" class="intro-section" style="padding: 70px 0 30px;"></section>
+
+        <!-- 4. Strategy Product Cards (Main 3 Cards) -->
+        <section id="strategy-catalog" class="audience-section" style="padding-top: 10px;"></section>
+
+        <!-- 5. Featured Strategy (Repeatable Process) -->
+        <section id="featured-process" class="featured-strategy-section"></section>
+
+        <!-- 6. Strategy Framework (4 Steps) -->
+        <section id="strategy-framework" class="process-section"></section>
+
+        <!-- 7. Interactive Strategy Category Filter -->
+        <section id="strategy-filter-section" class="analysis-section"></section>
+
+        <!-- 8. Educational Content ("More Than Just a Strategy") -->
+        <section id="strategy-education" class="education-section"></section>
+
+        <!-- 9. Trading Tools Section -->
+        <section id="trading-tools" class="why-platform-section"></section>
+
+        <!-- 10. Product Purchase / Pricing Plans -->
+        <section id="strategy-pricing" class="pricing-section"></section>
+
+        <!-- 11. Social Proof / Testimonials -->
+        <section id="strategy-testimonials" class="community-section"></section>
+
+        <!-- 12. Feature / Resource Banner -->
+        <section id="resource-banner" class="featured-strategy-section" style="padding-top: 0;"></section>
+
+        <!-- 13. Contact / Lead Section ("Need Help Choosing?") -->
+        <section id="strategy-contact" class="demo-section"></section>
+
+        <!-- 14. FAQ Section -->
+        <section id="strategy-faq" class="faq-section"></section>
+
+        <!-- 15. Risk Disclaimer -->
+        <section id="strategy-disclaimer" class="disclaimer-section"></section>
+      </main>
+
+      <!-- Enterprise Footer -->
+      <footer id="site-footer" class="site-footer"></footer>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Main JS Application Entrypoint for Strategies Page -->
+    <script type="module" src="/src/strategies-main.js"></script>
+  </body>
+</html>
