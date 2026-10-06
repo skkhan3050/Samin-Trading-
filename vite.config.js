@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/Samin-Trading/',
+  base: './',
   build: {
     rollupOptions: {
       input: {
