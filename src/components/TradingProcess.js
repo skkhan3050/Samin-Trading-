@@ -73,7 +73,7 @@ export function renderTradingProcess(container) {
     <!-- Process Ambient Background Video -->
     <div class="process-video-bg-container" aria-hidden="true">
       <video class="process-bg-video" autoplay loop muted playsinline preload="auto">
-        <source src="/process-bg-video.mp4" type="video/mp4" />
+        <source src="${import.meta.env.BASE_URL}process-bg-video.mp4" type="video/mp4" />
       </video>
       <div class="process-video-overlay"></div>
     </div>

@@ -12,7 +12,7 @@ export function renderHero(container) {
         playsinline
         preload="auto"
       >
-        <source src="/hero-bg-video.mp4" type="video/mp4" />
+        <source src="${import.meta.env.BASE_URL}hero-bg-video.mp4" type="video/mp4" />
       </video>
       <!-- Multi-tier Quality Enhancer Filters & Dark Gradient Vignette -->
       <div class="hero-video-overlay-gradient"></div>

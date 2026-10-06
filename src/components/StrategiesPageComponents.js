@@ -7,7 +7,7 @@ export function renderStrategiesHeader(container) {
   container.innerHTML = `
     <div class="container header-inner">
       <!-- Brand Logo -->
-      <a href="/" class="brand-logo" id="header-brand-logo">
+      <a href="${import.meta.env.BASE_URL}" class="brand-logo" id="header-brand-logo">
         <svg class="brand-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="4" y="10" width="6" height="16" rx="1.5" fill="currentColor"/>
           <line x1="7" y1="4" x2="7" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -27,21 +27,21 @@ export function renderStrategiesHeader(container) {
       <!-- Desktop Navigation -->
       <nav class="nav-desktop" aria-label="Main Navigation">
         <div class="nav-item">
-          <a href="/#market-strip" class="nav-link">Markets</a>
+          <a href="${import.meta.env.BASE_URL}#market-strip" class="nav-link">Markets</a>
         </div>
 
         <div class="nav-item active">
-          <a href="/strategies" class="nav-link" style="color: var(--neon-green); font-weight: 700;">
+          <a href="${import.meta.env.BASE_URL}strategies.html" class="nav-link" style="color: var(--neon-green); font-weight: 700;">
             <span>Strategies</span>
           </a>
         </div>
 
         <div class="nav-item">
-          <a href="/#trading-education" class="nav-link">Education</a>
+          <a href="${import.meta.env.BASE_URL}#trading-education" class="nav-link">Education</a>
         </div>
 
         <div class="nav-item">
-          <a href="/#market-analysis" class="nav-link">Analysis</a>
+          <a href="${import.meta.env.BASE_URL}#market-analysis" class="nav-link">Analysis</a>
         </div>
 
         <div class="nav-item">
@@ -70,11 +70,11 @@ export function renderStrategiesHeader(container) {
     <!-- Mobile Drawer -->
     <div class="mobile-drawer" id="mobile-drawer">
       <ul class="mobile-nav-list">
-        <li><a href="/" class="mobile-nav-link">Home</a></li>
-        <li><a href="/strategies" class="mobile-nav-link" style="color: var(--neon-green);">Strategies (Active)</a></li>
-        <li><a href="/#market-strip" class="mobile-nav-link">Markets</a></li>
-        <li><a href="/#trading-education" class="mobile-nav-link">Education</a></li>
-        <li><a href="/#market-analysis" class="mobile-nav-link">Analysis</a></li>
+        <li><a href="${import.meta.env.BASE_URL}" class="mobile-nav-link">Home</a></li>
+        <li><a href="${import.meta.env.BASE_URL}strategies.html" class="mobile-nav-link" style="color: var(--neon-green);">Strategies (Active)</a></li>
+        <li><a href="${import.meta.env.BASE_URL}#market-strip" class="mobile-nav-link">Markets</a></li>
+        <li><a href="${import.meta.env.BASE_URL}#trading-education" class="mobile-nav-link">Education</a></li>
+        <li><a href="${import.meta.env.BASE_URL}#market-analysis" class="mobile-nav-link">Analysis</a></li>
         <li><a href="#strategy-pricing" class="mobile-nav-link">Pricing</a></li>
         <li><a href="#strategy-faq" class="mobile-nav-link">FAQ & Resources</a></li>
       </ul>
